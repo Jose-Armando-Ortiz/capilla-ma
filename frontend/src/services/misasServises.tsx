@@ -8,7 +8,7 @@ export interface Misa {
 }
 
 export const fetchMisas = async (): Promise<Misa[]> => {
-  const response = await axios.get<Misa[]>('http://localhost:3000/api/misas');
+  const response = await axios.get<Misa[]>('http://localhost:8080/api/misas');
   return response.data;
 };
 
